@@ -1,7 +1,13 @@
 *{
-    color:darkslategray;
+    color:gray;
 }
+
+#my-heading{
+    color: blue;
+}
+
 /* this is a universal selector */
+
 
 h1 {
     color: hotpink;
@@ -9,17 +15,44 @@ h1 {
 
 p,
 h3{
-    color: aquamarine;
+    color:blueviolet;
 }
 
 .my-class{
     color:darkorange;
 }
 
-p > strong {
-    color:black;
+/*span{
+    display: block
+}*/
+
+p {
+    color:maroon;
+    text-align: center;
+    border: 1px solid black;
+    padding: 30px;
+    background-color: antiquewhite;
+    /*width: 200px;*/
 }
 
-span{
-    display: block
+article{
+    text-align: center;
+    border: 2px dashed lime;
+    border-color: crimson;
+    padding: 10px;
+    background-color: bisque;
 }
+
+h1{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    
+}
+
+
+
+
