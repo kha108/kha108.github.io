@@ -1,0 +1,25 @@
+*{
+    color:darkslategray;
+}
+/* this is a universal selector */
+
+h1 {
+    color: hotpink;
+}
+
+p,
+h3{
+    color: aquamarine;
+}
+
+.my-class{
+    color:darkorange;
+}
+
+p > strong {
+    color:black;
+}
+
+span{
+    display: block
+}
