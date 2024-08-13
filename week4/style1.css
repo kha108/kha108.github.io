@@ -15,15 +15,33 @@ body {
     font-size: 1.1rem;
   }
   .outer{
-    border: 2px dashed white;
+    border: 2px dashed #b1ce64;
     width: 400px;
     height: 200px;
+    color: #1a120b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px
+    /*flex-direction: column; */
   }
+
+  p{
+    padding: 10px;
+  }
+
 
   .limebox{
     background-color: limegreen;
+    flex: 0;
   }
-  
+
   .coralbox{
     background-color: coral;
   }
+
+  .plumbox{
+    background-color: plum;
+  }
+
+  
