@@ -13,8 +13,29 @@ h1{
     text-align: center;
 }
 
-img{
-    /*click image to direct to webpage*/
+.button{
+  border: solid white;
+  color: white;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin: auto;
+  display: block;
+}
+
+.button1{
+    background-color: #b2cd68; /*green colour*/
+}
+
+.image1{
     border: 2px solid white;
     border-radius: 3px;
     padding: 8px;
@@ -24,9 +45,6 @@ img{
     margin-right: auto;
     width: 80%;
 }
-img:hover {
-    box-shadow: 0 0 5px 2px #b2cd68;
-  }
 
 .div1{
     color:white;
@@ -35,15 +53,24 @@ img:hover {
     font-weight: 700px;
     font-style: normal;
     font-size:large;
-    text-align: left;
-    border: 1px solid black;
+    border: 3px solid #2e2e2e;
     padding: 30px;
     margin-left: auto;
     margin-right:auto;
     width: 100;
     height:auto;
     background-color: #6986d1;
+
 }
+
+.image2{
+    float: left;
+    padding: 10px;
+    width: 20%;
+
+}
+
+
 .div2{
     color:white;
     font-family: "Montserrat", sans-serif;
@@ -51,15 +78,38 @@ img:hover {
     font-weight: 700px;
     font-style: normal;
     font-size:large;
-    text-align: right;
-    border: 1px solid black;
+    border: 3px solid#2e2e2e;
     padding: 30px;
     margin-left: auto;
     margin-right:auto;
     width: 100;
     height:auto;
     background-color: #b2cd68;
+    text-align: left;
 }
+
+.div3{
+    color:white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700px;
+    font-style: normal;
+    font-size:large;
+    border: 3px solid #2e2e2e;
+    padding: 30px;
+    margin-left: auto;
+    margin-right:auto;
+    width: 100;
+    height:auto;
+    background-color: #e25c36;
+}
+
+.image3{
+    float: right;
+    width: 30%;
+}
+
+
 
 
 
