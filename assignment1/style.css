@@ -87,7 +87,11 @@ h1{
     background-color: #b2cd68;
     text-align: left;
 }
-
+.image3{
+    float: right;
+    width: 33%;
+    
+}
 .div3{
     color:white;
     font-family: "Montserrat", sans-serif;
@@ -104,10 +108,7 @@ h1{
     background-color: #e25c36;
 }
 
-.image3{
-    float: right;
-    width: 30%;
-}
+
 
 .div4{
     color:white;
@@ -236,6 +237,44 @@ h1{
     height:auto;
     background-color:#b2cd68;
 }
+.div12{
+    color:white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700px;
+    font-style: normal;
+    font-size:large;
+    border: 3px solid #2e2e2e;
+    padding: 30px;
+    margin-left: auto;
+    margin-right:auto;
+    width: 100;
+    height:auto;
+    background-color:#e25c36;
+}
 
+.image4{
+    float: right;
+    width: 25%;
+    border: 2px solid white;
+    
+}
+
+.div13{
+    color:white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700px;
+    font-style: normal;
+    font-size:large;
+    text-align: right;
+    border: 3px solid #2e2e2e;
+    padding: 30px;
+    margin-left: auto;
+    margin-right:auto;
+    width: 100;
+    height:auto;
+    background-color:#6986d1;
+}
 
 
