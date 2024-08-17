@@ -1,7 +1,8 @@
 body{
     background-color: #2e2e2e;
 }
-
+/*primarily chose colors based on the website's 
+color palette (grey-black, blue, green & red) to make the overall look coherent*/
 h1{
     color: whitesmoke;
     font-family: "Outfit", sans-serif;
@@ -12,7 +13,7 @@ h1{
     padding: auto;
     text-align: center;
 }
-
+/* click button to direct to the interactive website*/
 .button{
   border: solid white;
   color: white;
@@ -32,7 +33,7 @@ h1{
 }
 
 .button1{
-    background-color: #b2cd68; /*green colour*/
+    background-color: #b2cd68; 
 }
 
 .image1{
@@ -60,16 +61,14 @@ h1{
     width: 100;
     height:auto;
     background-color: #6986d1;
-
+    text-align: center;
 }
 
 .image2{
     float: left;
     padding: 10px;
-    width: 20%;
-
+    width: 14.5%;
 }
-
 
 .div2{
     color:white;
@@ -85,7 +84,7 @@ h1{
     width: 100;
     height:auto;
     background-color: #b2cd68;
-    text-align: left;
+    text-align: center;
 }
 .image3{
     float: right;
@@ -99,15 +98,26 @@ h1{
     font-weight: 700px;
     font-style: normal;
     font-size:large;
-    border: 3px solid #2e2e2e;
     padding: 30px;
     margin-left: auto;
     margin-right:auto;
     width: 100;
     height:auto;
     background-color: #e25c36;
+    text-align: center;
 }
 
+.hearts{
+    width: 50%;
+    padding: 10px;
+    display: block;
+    margin:auto;
+
+}
+
+.container1{
+  background-color: #e25c36;
+}
 
 
 .div4{
@@ -124,6 +134,7 @@ h1{
     width: 100;
     height:auto;
     background-color: #6986d1;
+    text-align: center;
 }
 
 .div5{
@@ -140,7 +151,9 @@ h1{
     width: 100;
     height:auto;
     background-color: #b2cd68;
+    text-align: center;
 }
+
 
 .div6{
     color:white;
@@ -156,6 +169,7 @@ h1{
     width: 100;
     height:auto;
     background-color: #e25c36;
+    text-align: center;
 }
 
 .div7{
@@ -172,6 +186,7 @@ h1{
     width: 100;
     height:auto;
     background-color:#6986d1;
+    text-align: center;
 }
 
 .div8{
@@ -188,6 +203,7 @@ h1{
     width: 100;
     height:auto;
     background-color:#b2cd68;
+    text-align: center;
 }
 
 .div9{
@@ -197,14 +213,16 @@ h1{
     font-weight: 700px;
     font-style: normal;
     font-size:large;
-    border: 3px solid #2e2e2e;
     padding: 30px;
     margin-left: auto;
     margin-right:auto;
     width: 100;
     height:auto;
     background-color:#e25c36;
+    text-align: center;
+    border: 3px solid #2e2e2e;
 }
+
 
 .div10{
     color:white;
@@ -213,13 +231,24 @@ h1{
     font-weight: 700px;
     font-style: normal;
     font-size:large;
-    border: 3px solid #2e2e2e;
     padding: 30px;
     margin-left: auto;
     margin-right:auto;
     width: 100;
     height:auto;
     background-color:#6986d1;
+    text-align: center;
+}
+
+.scribble{
+    width: 50%;
+    padding: 10px;
+    display: block;
+    margin:auto;
+}
+
+.container4{
+  background-color: #6986d1;
 }
 
 .div11{
@@ -236,6 +265,7 @@ h1{
     width: 100;
     height:auto;
     background-color:#b2cd68;
+    text-align: center;
 }
 .div12{
     color:white;
@@ -244,20 +274,32 @@ h1{
     font-weight: 700px;
     font-style: normal;
     font-size:large;
-    border: 3px solid #2e2e2e;
     padding: 30px;
     margin-left: auto;
     margin-right:auto;
     width: 100;
     height:auto;
     background-color:#e25c36;
+    text-align: center;
 }
 
-.image4{
-    float: right;
-    width: 25%;
-    border: 2px solid white;
-    
+.column2{
+    float:right;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    padding: 5px;
+    top: 20%;
+    /* to make both images to align next to each other*/
+}
+
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e25c36;
 }
 
 .div13{
@@ -267,8 +309,7 @@ h1{
     font-weight: 700px;
     font-style: normal;
     font-size:large;
-    text-align: right;
-    border: 3px solid #2e2e2e;
+    text-align: center;
     padding: 30px;
     margin-left: auto;
     margin-right:auto;
@@ -276,5 +317,20 @@ h1{
     height:auto;
     background-color:#6986d1;
 }
+
+.tajmahal{
+    width: 60%;
+    padding: 3px;
+    display: block;
+    margin:auto;
+    border: 2px solid #b2cd68;
+    /*added border to seperate the image and background color*/
+}
+
+.container3{
+    background-color:#6986d1 ;
+}
+
+
 
 
