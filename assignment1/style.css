@@ -179,7 +179,6 @@ h1{
     font-weight: 700px;
     font-style: normal;
     font-size:large;
-    border: 3px solid #2e2e2e;
     padding: 30px;
     margin-left: auto;
     margin-right:auto;
@@ -189,6 +188,17 @@ h1{
     text-align: center;
 }
 
+.menu{
+    width: 50%;
+    padding: 2px;
+    display: block;
+    margin:auto;
+    border: 2px solid #b2cd68;
+}
+
+.container6{
+  background-color:#6986d1 ;
+}
 .div8{
     color:white;
     font-family: "Montserrat", sans-serif;
@@ -196,7 +206,6 @@ h1{
     font-weight: 700px;
     font-style: normal;
     font-size:large;
-    border: 3px solid #2e2e2e;
     padding: 30px;
     margin-left: auto;
     margin-right:auto;
@@ -204,7 +213,9 @@ h1{
     height:auto;
     background-color:#b2cd68;
     text-align: center;
+    border: 3px solid black;
 }
+
 
 .div9{
     color:white;
@@ -220,9 +231,18 @@ h1{
     height:auto;
     background-color:#e25c36;
     text-align: center;
-    border: 3px solid #2e2e2e;
 }
 
+.newspaper{
+    width: 50%;
+    padding: 10px;
+    display: block;
+    margin:auto;
+}
+
+.container5{
+  background-color: #e25c36;
+}
 
 .div10{
     color:white;
