@@ -33,15 +33,30 @@
   }
 
   /* Countdown timer*/
-  #timer {
-    font-size: 2em;
-    color: #333;
-  }
-  button {
-    margin-top: 20px;
+  .timer-container {
+    text-align: center;
+    border: #f4f4f4;
+    background-color: whitesmoke;
+    width: 300px;
+    height: 200px;
+}
+
+#timer-display {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+button {
     padding: 10px 20px;
-    font-size: 1em;
-  }
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: whitesmoke;
+    cursor: not-allowed;
+}
   
 
 /* Create a container for the main content */

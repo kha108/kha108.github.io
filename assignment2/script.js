@@ -23,43 +23,43 @@ function updateProgressBar() {
 
 
 
-let countdownDuration = 20 * 60; // 20 minutes in seconds (20 * 60 = 1200 seconds)
-let timer; // Global timer variable
-let countdownInterval; // To store the interval ID
+let countdown;
+let timeLeft = 20 * 60; // 20 minutes in seconds
+const timerDisplay = document.getElementById('timer-display');
+const startButton = document.getElementById('start-button');
+const restartButton = document.getElementById('restart-button');
 
-// Function to start or restart the countdown
-function startCountdown(duration) {
-  timer = duration; // Reset the timer to the given duration
-
-  if (countdownInterval) {
-    clearInterval(countdownInterval); // Clear the previous interval if it exists
-  }
-
-  // Set the new interval
-  countdownInterval = setInterval(function() {
-    let minutes = Math.floor(timer / 60);
-    let seconds = Math.floor(timer % 60);
-
-    // Format time (add leading zero if needed)
-    minutes = minutes < 10 ? "0" + minutes : minutes;
-    seconds = seconds < 10 ? "0" + seconds : seconds;
-
-    // Update the display
-    // Display the countdown
-    document.getElementById("timer").textContent = minutes + ":" + seconds;
-
-    // Decrement the timer
-    if (--timer < 0) {
-      clearInterval(countdownInterval); // Stop the countdown when finished
-      document.getElementById("timer").textContent = "Time's up!";
-    }
-  }, 1000); // Update every second
+function updateDisplay() {
+    const minutes = Math.floor(timeLeft / 60);
+    const seconds = timeLeft % 60;
+    timerDisplay.textContent = `${minutes < 10 ? '0' : ''}${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
 }
 
-// Event listener for the "Restart" button
-document.getElementById("restart-btn").addEventListener("click", function() {
-  startCountdown(countdownDuration); // Restart the countdown
-});
+function startTimer() {
+    startButton.disabled = true;
+    restartButton.disabled = false;
 
-// Start the countdown on page load
-startCountdown(countdownDuration);
+    countdown = setInterval(() => {
+        timeLeft--;
+        updateDisplay();
+
+        if (timeLeft <= 0) {
+            clearInterval(countdown);
+            timerDisplay.textContent = 'Time\'s up!';
+        }
+    }, 1000);
+}
+
+function restartTimer() {
+    clearInterval(countdown);
+    timeLeft = 20 * 60; // Reset to 20 minutes
+    updateDisplay();
+    startButton.disabled = false;
+}
+
+startButton.addEventListener('click', startTimer);
+restartButton.addEventListener('click', restartTimer);
+
+// Initial setup
+updateDisplay();
+restartButton.disabled = true;
