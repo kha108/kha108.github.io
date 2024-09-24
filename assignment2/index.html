@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <!-- add the font family of your choice -->
+    <!-- add the font family of your choice -->   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">    
@@ -15,20 +15,116 @@
   <body>
        <!-- Header Section -->
        <header>
-        <h1>Study Radio</h1>
+        <h1>Study Playlist</h1>
       </header>
 
-<!-- Countdown Timer Section -->
-<div class="timer-container">
-    <div id="timer-display">20:00</div>
-    <button id="start-button">
-        <img src="icons8-play-30.png" alt="Start Button">
-    </button>
-    <button id="restart-button">
-        <img src="icons8-replay-30.png" alt="Restart Button">
-    </button>
-</div>
 
+<div class="outer">
+  <!-- We divide the content of the box into three sections
+  1. image-container = it contains the musicplayer as well as playlist
+  2. music-title = it contains meta information about video currently being played
+  3. music-controls = it gives options for users to control the music such as 
+     play, pause, make it fullscreen etc.  -->
+  <section class="image-container">
+    <!-- we further divide video-container into two sections
+    1. music player
+    2. image-list: a section containing clickable images of music album covers 
+       that can be played.  -->
+       <img src="forest.jpeg" alt="forest">
+
+    
+
+    <section class="image-list">
+      <!-- We use buttons, whenever user clicks on them, the correspoding 
+      music will be played  -->
+      <button id="first-song-btn">
+        <img id="first-song-img" src="forest.jpeg" alt="forest" />
+      </button>
+      <button id="second-song-btn">
+        <img id="second-song-img" src="milkyway.jpeg" alt="milkyway" />
+      </button>
+    </button>
+    <button id="third-song-btn">
+      <img id="third-song-img" src="beach.jpeg" alt="beach" />
+    </button>
+    </section>
+  </section>
+
+  <section class="music-title">
+    <!-- in this section, we display the name of the music and current playtime -->
+    <h1>Now Playing: <span id="music-name"></span></h1>
+    <h1>Current playtime: <span id="music-time"></span></h1>
+  </section>
+  <section class="music-controls">
+    <!-- Here we create controls using buttons to play pause music
+    as well as use a div to show progress.  -->
+    <button id="play-pause-btn">
+      <img
+        id="play-pause-img"
+        src="https://img.icons8.com/ios-glyphs/30/play--v1.png"
+        alt="Play Button"
+        width="24"
+        height="24"
+      />
+    </button>
+    <button id="mute-unmute-btn">
+      <img
+        id="mute-unmute-img"
+        src="https://img.icons8.com/ios-glyphs/30/no-audio--v1.png"
+        alt="Mute Button"
+        width="24"
+        height="24"
+      />
+    </button>
+    <button id="previous-btn">
+      <img
+        id="previous-img"
+        src="https://img.icons8.com/ios-glyphs/30/skip-to-start--v2.png"
+        alt="Previous Button"
+        width="24"
+        height="24"
+      />
+    </button>
+    <button id="next-btn">
+      <img
+        id="next-img"
+        src="https://img.icons8.com/ios-glyphs/30/end--v2.png"
+        alt="Next Button"
+        width="24"
+        height="24"
+      />
+    </button>
+    <div class="progress-bar">
+      <span id="progress-bar-fill"></span>
+    </div>
+    <button id="loop-btn">
+      <img
+        id="loop-img"
+        src="https://img.icons8.com/ios-glyphs/30/repeat.png"
+        alt="Loop Button"
+        width="24"
+        height="24"
+      />
+    </button>
+    <button id="decrease-volume-btn">
+      <img
+        id="decrease-volume-img"
+        src="https://img.icons8.com/ios-glyphs/30/low-volume.png"
+        alt="Decrease volume Button"
+        width="24"
+        height="24"
+      />
+    </button>
+    <button id="increase-volume-btn">
+      <img
+        id="increase-volume-img"
+        src="https://img.icons8.com/ios-glyphs/30/high-volume--v1.png"
+        alt="Increase volume Button"
+        width="24"
+        height="24"
+      />
+    </button>
+  </section>
 
 <!-- Main Content Section -->
 
