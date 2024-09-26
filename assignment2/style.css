@@ -46,14 +46,32 @@
 .outer {
   /*make the background opaque without affecting the contents inside the container*/
   background-color: rgba(0, 0, 0, 0.5); 
-  max-width: 900px;
-  min-height: 200px;
+  max-width: 700px;
+  min-height: 700px;
   padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   /* border-radius: 5px; */
   /* flex-wrap: wrap; */
+}
+
+.audio-container {
+  width: 300px; /* Set the desired width */
+  margin: 20px auto; /* Center the container */
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+audio-image {
+    width: 100%; /* Adjust to your desired image size */
+    border-radius: 10px;
+    margin-bottom: 10px; /* Space between the image and audio player */
+}
+
+audio {
+  width: 100%; /* Ensure the audio player fits the container */
 }
 
 img {
