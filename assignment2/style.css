@@ -56,44 +56,36 @@
   /* flex-wrap: wrap; */
 }
 
-.audio-container {
-  width: 300px; /* Set the desired width */
-  margin: 20px auto; /* Center the container */
-  padding: 10px;
-  border-radius: 10px;
-  text-align: center;
-}
-
-audio-image {
-    width: 100%; /* Adjust to your desired image size */
-    border-radius: 10px;
-    margin-bottom: 10px; /* Space between the image and audio player */
-}
-
-audio {
-  width: 100%; /* Ensure the audio player fits the container */
-}
-
 img {
   cursor: pointer;
 }
 
-.image-container {
+.audio-container {
   display: flex;
   gap: 1rem;
-  /* flex-wrap: wrap; */
 }
 
-.image-container > img {
-  /* flex: 1; */
+.audio-player {
   width: 75%;
-  height: 400px;
-  border-radius: 5px;
-  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.image-list {
-  
+.audio-player > img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.audio-player audio {
+  width: 100%;
+  border-radius: 5px; /* Ensure the audio player fits the container */
+}
+
+.audio-list {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -101,14 +93,19 @@ img {
   flex: 1;
 }
 
-/* .music-list button {
-  border-radius: 5px;
-} */
+.audio-list button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
 
-/* .music-list button:hover {
-  scale: 0.97;
-} */
-.music-controls,
+.audio-list button img {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+}
+
+.audio-controls,
 .timeline {
   display: flex;
   gap: 1rem;
@@ -116,7 +113,7 @@ img {
   /* align-items: center; */
 }
 
-.music-controls button {
+.audio-controls button {
   width: 56px;
   height: 40px;
   background-color: #d5cea3;
@@ -134,7 +131,7 @@ img {
   scale: 0.9;
 } */
 
-.music-controls button img {
+.audio-controls button img {
   width: 24px;
   height: 24px;
   display: block;
@@ -148,12 +145,12 @@ img {
   border-radius: 5px;
 }
 
-.music-title {
+.audio-title {
   display: flex;
   justify-content: space-between;
 }
 
-.music-title h1 {
+.audio-title h1 {
   font-size: 1.2rem;
 }
 

@@ -25,45 +25,44 @@
   2. music-title = it contains meta information about video currently being played
   3. music-controls = it gives options for users to control the music such as 
      play, pause, make it fullscreen etc.  -->
-
      <div class="audio-container">
-      <img src="forest.jpeg" alt="forest img" class="audio-img">
-      <audio controls>
+      <!-- Audio Player -->
+      <img  id="audio cover"  src="forest.jpeg" alt="forest img" >
+      <audio  id="my-audio" controls>
           <source src="erokia_ambient-wave-56-msfxp7-78.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
       </audio>
   </div>
      
-  <section class="image-container">
     <!-- we further divide video-container into two sections
     1. music player
     2. image-list: a section containing clickable images of music album covers 
        that can be played.  -->
-       <img src="forest.jpeg" alt="forest">
 
-    
-
-    <section class="image-list">
+     <!-- Audio Playlist -->
+    <section class="audio-list">
       <!-- We use buttons, whenever user clicks on them, the correspoding 
-      music will be played  -->
-      <button id="first-song-btn">
-        <img id="first-song-img" src="forest.jpeg" alt="forest" />
+      audio will be played  -->
+      <button id="first-audio-btn">
+        <img src="forest.jpeg" alt="forest1" />
       </button>
-      <button id="second-song-btn">
-        <img id="second-song-img" src="milkyway.jpeg" alt="milkyway" />
+      <button id="second-audio-btn">
+        <img src="milkyway.jpeg" alt="milkyway2" />
       </button>
     </button>
-    <button id="third-song-btn">
-      <img id="third-song-img" src="beach.jpeg" alt="beach" />
+    <button id="third-audio-btn">
+      <img src="beach.jpeg" alt="beach3" />
     </button>
     </section>
   </section>
-
-  <section class="music-title">
+   <!-- Audio Title -->
+  <section class="audio-title">
     <!-- in this section, we display the name of the music and current playtime -->
-    <h1>Now Playing: <span id="music-name"></span></h1>
-    <h1>Current playtime: <span id="music-time"></span></h1>
+    <h1>Now Playing: <span id="ambient-forest"></span></h1>
   </section>
-  <section class="music-controls">
+
+  <!-- Audio Controls -->
+  <section class="audio-controls">
     <!-- Here we create controls using buttons to play pause music
     as well as use a div to show progress.  -->
     <button id="play-pause-btn">
