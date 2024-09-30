@@ -18,48 +18,23 @@
         <h1>Study Playlist</h1>
       </header>
 
-
-<div class="outer">
-  <!-- We divide the content of the box into three sections
-  1. image-container = it contains the musicplayer as well as playlist
-  2. music-title = it contains meta information about video currently being played
-  3. music-controls = it gives options for users to control the music such as 
-     play, pause, make it fullscreen etc.  -->
-     <div class="audio-container">
-      <!-- Audio Player -->
-      <img  id="audio cover"  src="forest.jpeg" alt="forest img" >
-      <audio  id="my-audio" controls>
-          <source src="erokia_ambient-wave-56-msfxp7-78.mp3" type="audio/mp3">
-          Your browser does not support the audio element.
-      </audio>
+<!-- Audio Player -->
+<div class="audio-player">
   </div>
-     
-    <!-- we further divide video-container into two sections
-    1. music player
-    2. image-list: a section containing clickable images of music album covers 
-       that can be played.  -->
+  <p><span id="ambient-wave">Ambient Wave</span></p>
+</div>
 
-     <!-- Audio Playlist -->
-    <section class="audio-list">
-      <!-- We use buttons, whenever user clicks on them, the correspoding 
-      audio will be played  -->
-      <button id="first-audio-btn">
-        <img src="forest.jpeg" alt="forest1" />
-      </button>
-      <button id="second-audio-btn">
-        <img src="milkyway.jpeg" alt="milkyway2" />
-      </button>
-    </button>
-    <button id="third-audio-btn">
-      <img src="beach.jpeg" alt="beach3" />
-    </button>
-    </section>
-  </section>
-   <!-- Audio Title -->
-  <section class="audio-title">
-    <!-- in this section, we display the name of the music and current playtime -->
-    <h1>Now Playing: <span id="ambient-forest"></span></h1>
-  </section>
+  <!-- Opaque Container for Audio Controls -->
+  <div class="audio-controls-container">
+    <!-- Audio Title Display -->
+    <h1 id="audio-title">Audio Title: Sample Track</h1>
+
+<!-- Hidden Audio Element -->
+<audio id="audio-player" controls style="display: none;">
+  <source src="erokia_ambient-wave-56-msfxp7-78.mp3" type="audio/mp3">
+</audio>
+</div>
+
 
   <!-- Audio Controls -->
   <section class="audio-controls">
@@ -104,14 +79,6 @@
     <div class="progress-bar">
       <span id="progress-bar-fill"></span>
     </div>
-    <button id="loop-btn">
-      <img
-        id="loop-img"
-        src="https://img.icons8.com/ios-glyphs/30/repeat.png"
-        alt="Loop Button"
-        width="24"
-        height="24"
-      />
     </button>
     <button id="decrease-volume-btn">
       <img
@@ -132,6 +99,9 @@
       />
     </button>
   </section>
+      <!-- Hide/Show Controls Button -->
+      <button id="hide-show-controls-btn">Hide Controls</button>
+    </div>
 
 <!-- Main Content Section -->
 
