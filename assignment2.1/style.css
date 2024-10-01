@@ -12,57 +12,7 @@ body {
     align-items: center;
     justify-content: space-between;
   }
-  /* Create a container for the main content */
-.container {
-    max-width: 1000px;
-    width: 100%;
-    padding: 10px;
-  }
-
-/* Header styling */
-header {
-    font-size:xxx-large; 
-    color: var(--main-text-color);
-    padding: 10px 0;
-    text-align: center;
-    width: 100%;
-}
-/* Media player styling */
-  .custom-controls {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 10px;
-    width: 100%;
-  }
   
-  .custom-controls button {
-    background-color: var(--main-btn-bg-color);
-    color: var(--main-text-color);
-    border: none;
-    padding: 8px 12px;
-    cursor: pointer;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .progress-bar {
-    width: 100%;
-    height: 10px;
-    background-color: #ddd;
-    margin-top: 10px;
-    overflow: hidden;
-  }
-  
-  .progress-bar span {
-    display: block;
-    height: 100%;
-    background-color: var(--main-bg-color);
-    width: 0;
-    transition: width 0.3s ease;
-  }
   
   /* Footer styling */
   footer {

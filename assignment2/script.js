@@ -7,18 +7,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const tracks = [
     {
-      name: 'Audio 1',
-      src: 'audio1.mp3',
-      img: 'audio1.png',
+      name: 'Forest 1',
+      src: 'erokia_ambient-wave-56-msfxp7-78.mp3',
+      img: 'forest.jpeg',
     },
     {
-      name: 'Audio 2',
-      src: 'audio2.mp3',
-      img: 'audio2.png',
+      name: 'Milkyway 2',
+      src: 'p-hase_Leapt,mp3',
+      img: 'milkyway.jpeg',
     },
     {
-      name: 'Audio 3',
-      src: 'audio3.mp3',
+      name: 'Beach 3',
+      src: 'p-hase_Water-Feature.mp3',
       img: 'audio3.png',
     },
   ];
