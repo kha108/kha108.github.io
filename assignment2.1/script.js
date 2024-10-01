@@ -28,19 +28,3 @@ const songs = [
   },
 ]
 
-playBtn.addEventListener('click', ()=> {
-  playBtn.classList.toggle('pause');
-  disk.classList.toggle('play');
-})
-
-// setup music
-
-const setMusic = (i) => {
-  progressBar.value = 0; //set range slide value to 0//
-  let song = songs[i];
-}
-
-const playPauseButton = document.querySelector("#play-pause-btn");
-// Event listener to toggle between playing and pausing video on clicking the button
-playPauseButton.addEventListener("click", togglePlay);
-const playPauseImg = document.querySelector("#play-pause-img");

@@ -18,92 +18,35 @@
         <h1>Study Playlist</h1>
       </header>
 
-<!-- Audio Player -->
-<div class="audio-player">
-  </div>
-  <p><span id="ambient-wave">Ambient Wave</span></p>
-</div>
+      <div class="music-container">
+        <div class="music-info">
+          <h4 id="title">Coverless Book</h4>
+          <div class="progress-container">
+            <div class="progress"></div>
+          </div>
+        </div>
 
-  <!-- Opaque Container for Audio Controls -->
-  <div class="audio-controls-container">
-    <!-- Audio Title Display -->
-    <h1 id="audio-title">Audio Title: Sample Track</h1>
+        <audio src="coverless-book.mp3" id="audio"></audio>
 
-<!-- Hidden Audio Element -->
-<audio id="audio-player" controls style="display: none;">
-  <source src="erokia_ambient-wave-56-msfxp7-78.mp3" type="audio/mp3">
-</audio>
-</div>
+      <div class="image-container">
+        <img src="scenery.jpg" alt="music-cover" id="cover">
+      </div>
 
-
-  <!-- Audio Controls -->
-  <section class="audio-controls">
-    <!-- Here we create controls using buttons to play pause music
-    as well as use a div to show progress.  -->
-    <button id="play-pause-btn">
-      <img
-        id="play-pause-img"
-        src="https://img.icons8.com/ios-glyphs/30/play--v1.png"
-        alt="Play Button"
-        width="24"
-        height="24"
-      />
-    </button>
-    <button id="mute-unmute-btn">
-      <img
-        id="mute-unmute-img"
-        src="https://img.icons8.com/ios-glyphs/30/no-audio--v1.png"
-        alt="Mute Button"
-        width="24"
-        height="24"
-      />
-    </button>
-    <button id="previous-btn">
-      <img
-        id="previous-img"
-        src="https://img.icons8.com/ios-glyphs/30/skip-to-start--v2.png"
-        alt="Previous Button"
-        width="24"
-        height="24"
-      />
-    </button>
-    <button id="next-btn">
-      <img
-        id="next-img"
-        src="https://img.icons8.com/ios-glyphs/30/end--v2.png"
-        alt="Next Button"
-        width="24"
-        height="24"
-      />
-    </button>
-    <div class="progress-bar">
-      <span id="progress-bar-fill"></span>
-    </div>
-    </button>
-    <button id="decrease-volume-btn">
-      <img
-        id="decrease-volume-img"
-        src="https://img.icons8.com/ios-glyphs/30/low-volume.png"
-        alt="Decrease volume Button"
-        width="24"
-        height="24"
-      />
-    </button>
-    <button id="increase-volume-btn">
-      <img
-        id="increase-volume-img"
-        src="https://img.icons8.com/ios-glyphs/30/high-volume--v1.png"
-        alt="Increase volume Button"
-        width="24"
-        height="24"
-      />
-    </button>
-  </section>
-      <!-- Hide/Show Controls Button -->
-      <button id="hide-show-controls-btn">Hide Controls</button>
-    </div>
-
-<!-- Main Content Section -->
+      <div class="navigation">
+        <!-- previous button -->
+        <button id="prev" class="action-btn">
+          <img src="icons8-skip-to-start-48.png" alt="backward-btn">
+        </button>
+        <!-- play button -->
+        <button id="play" class="action-btn action-btn-big">
+          <img src="icons8-play-30.png" alt="play-btn">
+        </button>
+        <!-- next button -->
+        <button id="next" class="action-btn">
+          <img src="icons8-end-48.png" alt="forward-btn">
+        </button>
+      </div>
+      </div>
 
     <!-- Footer Section -->
     <footer>
