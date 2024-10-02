@@ -62,10 +62,6 @@ body {
     animation-play-state: paused;
   }
 
-  .disk.play{
-    animation-play-state: running;
-  }
-
   .disk::before{
     content: '';
     position: absolute;

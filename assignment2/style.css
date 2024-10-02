@@ -26,7 +26,7 @@ body {
  
 .music-container{
     width: 600px;
-    height: 600px;
+    height: 500px;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.5);
     padding: 30px;
@@ -53,7 +53,7 @@ body {
 }
 
 .music-container.play .image-container img{
-  /* animation-play-state: running; */
+  animation-play-state: running;
 
 }
 
@@ -100,9 +100,6 @@ body {
   
 }
 
-.action-btn-big{
-  
-}
 
 .music-info{
   top: 2%;
