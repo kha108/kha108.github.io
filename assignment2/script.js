@@ -1,73 +1,52 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const audio = document.getElementById('my-audio');
-  const playPauseBtn = document.getElementById('play-pause-btn');
-  const playPauseImg = document.getElementById('play-pause-img');
-  const audioName = document.getElementById('audio-name');
-  const audioImg = document.getElementById('audio-img');
+const musicContainer = document.querySelector('.music-container');
+const playBtn = document.querySelector('#play');
+const prevBtn = document.querySelector('#prev');
+const nextBtn = document.querySelector('#next');
+const audio = document.querySelector('#audio');
+const progress = document.querySelector('.progress');
+const progressContainer = document.querySelector('.progress-container');
+const title = document.querySelector('#title');
+const cover = document.querySelector('#cover');
 
-  const tracks = [
-    {
-      name: 'Forest 1',
-      src: 'erokia_ambient-wave-56-msfxp7-78.mp3',
-      img: 'forest.jpeg',
-    },
-    {
-      name: 'Milkyway 2',
-      src: 'p-hase_Leapt,mp3',
-      img: 'milkyway.jpeg',
-    },
-    {
-      name: 'Beach 3',
-      src: 'p-hase_Water-Feature.mp3',
-      img: 'audio3.png',
-    },
-  ];
+//Song titles//
+const songs = ['summer-rain', 'lofi-orchestra', 'Coverless']
 
-  let currentTrack = 0;
+//Keep track of the songs//
+let songIndex = 2
 
-  function loadTrack(index) {
-    audio.src = tracks[index].src;
-    audioName.textContent = tracks[index].name;
-    audioImg.src = tracks[index].img;
-    currentTrack = index;
-    audio.play();
-    updatePlayPauseIcon();
+//Initially load song info DOM//
+loadSong(songs[songIndex])
+
+//Update song details//
+function loadSong(song) {
+  title.innerText = song
+  audio.src = `music/${song}.mp3`
+  cover.src = `images/${song}.jpg`
+}
+
+function playSong() {
+  musicContainer.classList.add('play')
+  playBtn.querySelector('action-btn').classList.add('play-btn')
+  playBtn.querySelector('action-btn').classList.add('pause-btn')
+
+  audio.play()
+}
+
+function pauseSong() {
+  musicContainer.classList.remove('play')
+  playBtn.querySelector('action-btn').classList.add('play-btn')
+  playBtn.querySelector('action-btn').classList.add('pause-btn')
+
+  audio.pause()
+}
+
+//Event Listener//
+playBtn.addEventListener('click', () => {
+  const isPlaying = musicContainer.classList.contains('play')
+
+  if (isPlaying) {
+    pauseSong()
+  } else {
+    playSong()
   }
-
-  function updatePlayPauseIcon() {
-    if (audio.paused) {
-      playPauseImg.src = 'https://img.icons8.com/ios-glyphs/30/play--v1.png';
-    } else {
-      playPauseImg.src = 'https://img.icons8.com/ios-glyphs/30/pause--v1.png';
-    }
-  }
-
-  playPauseBtn.addEventListener('click', () => {
-    if (audio.paused) {
-      audio.play();
-    } else {
-      audio.pause();
-    }
-    updatePlayPauseIcon();
-  });
-
-  document.getElementById('first-audio-btn').addEventListener('click', () => {
-    loadTrack(0);
-  });
-
-  document.getElementById('second-audio-btn').addEventListener('click', () => {
-    loadTrack(1);
-  });
-
-  document.getElementById('third-audio-btn').addEventListener('click', () => {
-    loadTrack(2);
-  });
-
-  audio.addEventListener('ended', () => {
-    currentTrack = (currentTrack + 1) % tracks.length;
-    loadTrack(currentTrack);
-  });
-
-  // Initialize with the first track
-  loadTrack(0);
-});
+})
