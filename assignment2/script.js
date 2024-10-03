@@ -9,7 +9,7 @@ const title = document.querySelector('#title');
 const cover = document.querySelector('#cover');
 
 //Song titles//
-const songs = ['summer-rain', 'lofi-orchestra', 'Coverless']
+const songs = ['summer-rain', 'lofi-orchestra', 'coverless']
 
 //Keep track of the songs//
 let songIndex = 2
@@ -26,16 +26,16 @@ function loadSong(song) {
 
 function playSong() {
   musicContainer.classList.add('play')
-  playBtn.querySelector('action-btn').classList.add('play-btn')
-  playBtn.querySelector('action-btn').classList.add('pause-btn')
+  // playBtn.querySelector('action-btn').classList.add('play-btn')
+  // playBtn.querySelector('action-btn').classList.add('pause-btn')
 
   audio.play()
 }
 
 function pauseSong() {
   musicContainer.classList.remove('play')
-  playBtn.querySelector('action-btn').classList.add('play-btn')
-  playBtn.querySelector('action-btn').classList.add('pause-btn')
+  // playBtn.querySelector('action-btn').classList.add('play-btn')
+  // playBtn.querySelector('action-btn').classList.add('pause-btn')
 
   audio.pause()
 }
@@ -97,3 +97,17 @@ audio.addEventListener('timeupdate', updateProgress)
 progressContainer.addEventListener('click', setProgress)
 
 audio.addEventListener('ended', nextSong)
+
+//Digital Clock//
+function updateClock(){
+  const now = new Date();
+  const hours = now.getHours().toString().padStart(2,0);
+  const minutes = now.getMinutes().toString().padStart(2,0);
+  const seconds = now.getSeconds().toString().padStart(2,0);
+  const timeString = `${hours}:${minutes}:${seconds}`;
+  document.getElementById("clock").textContent = timeString;
+
+}
+
+updateClock();
+setInterval(updateClock, 1000);

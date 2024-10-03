@@ -24,6 +24,28 @@ body {
   justify-content: space-between;
 }
  
+#clock-container{
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 35px;
+  width: 300px;
+  height:300px;
+  border: 3.5px solid;
+  border-color: cadetblue;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  margin-bottom: 30px;
+  
+}
+
+#clock{
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
 .music-container{
     width: 600px;
     height: 500px;
@@ -115,7 +137,7 @@ body {
   border-radius: 5px;
   cursor: pointer;
   margin: 10px 0 ;
-  height: 4px;
+  height: 8px;
   width: 100%;
 }
 
