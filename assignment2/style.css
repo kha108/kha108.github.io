@@ -14,6 +14,9 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  /*For the background image I chose to put an animation GIF of rain as it radiates a calm, soothing atmosphere,
+  which is suitable for study and relaxation. The animation is not too busy so users will not get distracted.
+  Besides that, the GIF has a smooth loop transition and does not show a big glitch when looping unlike some other GIFs.*/
   background:url('rain.gif');
   background-size: cover;
   color:white;
@@ -25,12 +28,14 @@ body {
 }
  
 #clock-container{
+  /*The digital clock is placed in a flex box with borders added to mimic a real digital clock */
   display: flex;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 35px;
   width: 300px;
   height:300px;
   border: 3.5px solid;
+  /*I decided on cadetblue for the border colour because it creates harmony with the background. */
   border-color: cadetblue;
   border-radius: 10px;
   justify-content: center;
@@ -42,6 +47,7 @@ body {
 
 #clock{
   font-size: 3rem;
+  /*The font size for the time is in bold it is noticable at first glance.*/
   font-weight: bold;
   text-align: center;
 }
@@ -50,6 +56,8 @@ body {
     width: 600px;
     height: 500px;
     border-radius: 20px;
+    /*I chose a white opaque background for my music player so the background peeks through 
+    music player and users can watch the whole GIF. */
     background-color: rgba(255, 255, 255, 0.5);
     padding: 30px;
     position: relative;
@@ -69,7 +77,9 @@ body {
   position: relative;
   top: 50%;
   left: 60%;
-
+/* The animation is added so when users start the music player the music cover image will rotate
+to imitate a disk in a cd player or vinyl in record player. When users pause the music the 
+rotation will pause as well.*/
   animation: rotate 3s linear infinite;
   animation-play-state: paused;
 }
@@ -91,6 +101,8 @@ body {
 }
 
 .image-container::after {
+  /*This is to add a circle in the centre of the music cover image so it looks like
+  a cd disk or vinyl */
   content: '';
   background-color: rgba(255, 255, 255, 1);
   position: absolute;
@@ -142,6 +154,8 @@ body {
 }
 
 .progress{
+  /* The progress bar fill is in cadetblue because it is coherent to the 
+  background colour of the media player.*/
   background-color: cadetblue;
   border-radius: 5px;
   height: 100%;

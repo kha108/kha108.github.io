@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- add the font family of your choice -->   
+    <title>Document</title>   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- I choose Lexend Deca font because it is a san serif that looks very simple and minimal 
+     which suits the aesthetic I want my media player to have.-->
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
@@ -14,14 +15,19 @@
   </head>
   <body>
        <!-- Header Section -->
+        <!-- I put my title as Study Radio because users will not know how many songs 
+         are there in the playlist -->
        <header>
-        <h1>Study Playlist</h1>
+        <h1>Study Radio</h1>
       </header>
 
+    <!--Although this media player is used for both study and relaxation, usually when studying, I would want to
+    keep track of the time. Hence, I included a digital clock in my media player. -->
       <div id="clock-container">
         <div id="clock">00:00:00</div>
       </div>
-
+    <!-- For image choices, I choose images with illustrations that fit the aesthetics of lofi, 
+    such as cafes, sunsets and ghibli-like scenery. -->
       <div class="music-container">
       <div class="image-container">
         <img src="images/coverless.jpg" alt="music-cover" id="cover">
@@ -33,9 +39,12 @@
           <div class="progress"></div>
         </div>
       </div>
-
+    <!-- For music choices, I went for lofi music as it is a trending genre of music for
+     studying and relaxtion. Lofi music usually characterised by slow beats and calm rhythm.  -->
       <audio src="music/coverless.mp3" id="audio"></audio>
 
+      <!-- To make the media player minimalistic and simple, I only included 
+       three essential buttons. -->
       <div class="navigation">
         <!-- previous button -->
         <button id="prev" class="action-btn">
@@ -51,8 +60,6 @@
         </button>
       </div>
       </div>
-
-      
 
 
     <!-- Footer Section -->
@@ -73,7 +80,14 @@
       <a href="https://pixabay.com/music/beats-lofi-orchestra-162306/">Lofi Orchestra</a> music by
       <a href="https://pixabay.com">Pixabay</a>
       <a href="https://pixabay.com/music/beats-coverless-book-lofi-186307/">Coverless Book</a> music by
+      <a href="https://pixabay.com">Pixabay</a> <br>
+      <a href="https://pixabay.com/illustrations/sunset-ocean-beach-water-tropical-7790621/">sunset-ocean-beach-water-tropical</a> image by
       <a href="https://pixabay.com">Pixabay</a>
+      <a href="https://pixabay.com/illustrations/cafe-bar-espresso-machine-pub-4602458/">cafe-bar-espresso-machine-pub</a> image by
+      <a href="https://pixabay.com">Pixabay</a>
+      <a href="https://pixabay.com/illustrations/studio-ghibli-style-16-9-meadow-7415572/">studio-ghibli-style-meadow</a> image by
+      <a href="https://pixabay.com">Pixabay</a>
+      
       
     </footer>
   </body>
