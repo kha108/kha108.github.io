@@ -25,6 +25,6 @@ function handleDrop() {
     // const color = draggedElement.style.backgroundColor;
     dropBox.style.backgroundColor = color;
     dropBox.textContent = "Dropped!";
-    draggedElement = null;
+    // draggedElement = null;
   }
 }
