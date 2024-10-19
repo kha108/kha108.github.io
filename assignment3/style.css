@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
     background-color: white;
     display: flex;
@@ -16,23 +22,96 @@ body {
     gap: 1.5rem;
   }
 
-  .outer {
-    width: 400px;
-    min-height: 200px;
-    padding: 10px;
-    display: flex;
+  .dragbox {
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #item3 {
+    justify-content: end;
+    top: 330px;
+    left: 130px;
+    width: 100px;
+  }
+  
+  #basket {
+    width: 150px;
+    top: 50px;
+  }
+
+  .draggable {
+    position: absolute;
+    z-index: 1;
+    /* top: 0;
+    left: 0; */
+    width: 100px;
+    height: 150px;
+    /* width: 100px; */
+    /* min-height: 100px; */
+    cursor: grab;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
+  } 
+
+  .draggable:hover {
+    z-index: 10; /* Brings the hovered item to the front */
+  }
+
+  .image-container{
+    display: flex;
+    flex-direction: column;
+      /* align-items: center; Optional: Center horizontally */
+      /* width: 100%; */
   }
   
-  .colorbox {
-    background-color: purple;
-    cursor: pointer;
+  .top {
+    width: 100%; /* Adjust width */
+    max-width: 250px;
+    flex-direction: column;
+    /* align-items: center; */
+    /* display: flex; */
+
   }
   
+
   .dropbox {
-    border: 2px dashed #e5e5cb7a;
+    box-sizing: border-box;
+    /* flex-direction: column; */
+    width: 100%;
+    max-width: 250px;
+    /* border: none; */
     cursor: pointer;
+    /* padding: 10px; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+  }
+
+  #spin {
+    position: absolute;
+    width: 72px;
+    right: 600px;
+    top: 478px;
+  }
+
+  /* Washing Machine spinning animation */
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+  .text-box {
+    position: absolute;   /* Position the box absolutely */
+    top: 200px;            /* Distance from the top of the page */
+    right: 70px;           /* Distance from the left of the page */
+    width: 350px;         /* Width of the text box */
+    align-items: center;
+    padding: 50px;        /* Padding inside the box */
+    border: 5px dashed #333; /* Border around the text box */
+    background-color: turquoise; /* Background color of the box */
+    color: firebrick;
+    text-align: center;
+    /* font-size: x-large; */
   }
   

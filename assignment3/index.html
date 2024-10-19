@@ -14,16 +14,47 @@
   </head>
   <body>
 
-    <audio autoplay loop muted>
-      <source src="Blithe-part-A.mp3" type="audio/mp3">
-      <source src="Blithe part A.ogg" type="audio/ogg">
-  Your browser does not support the audio element.
-    </audio>
+   <div class="text-box">
+    Let's do laundry! <br>
+    Step 1: Insert coin <br>
+    Step 2: Put in your laundry <br>
+    Step 3: Add detergent <br>
+    Step 4: Press button to start! 
+   </div>
 
-    <div class="colorbox" draggable="true">
-      <img src="IMG_3447-removebg-preview.png" alt="">
+   <div class="dragbox" id="container">
+    <div class="draggable" id="basket"><img src="basket.png" alt="basket"></div>
+    <div class="draggable" draggable="true" id="item1"><img src="socks.png" alt="item1"></div>
+    <div class="draggable" draggable="true" id="item2"><img src="shirt.png" alt="item2"></div>
+    <div class="draggable" draggable="true" id="item3"><img src="detergent1.png" alt="item3"></div>
+    <div class="draggable" draggable="true" id="item4">Item 4</div>
+    
+   </div>
+<!-- 
+    <div class="draggable" draggable="true">
+    <img src="IMG_3447-removebg-preview.png" alt="">
+    <div id="item1">item 1</div>
+    <div id="item2">item 2</div>
+    <div id="item3">item 3</div>
+    </div> -->
+
+   <!-- <div class="basket" draggable="true" id="item1">Item 1</div>
+   <div class="basket" draggable="true" id="item2">Item 2</div>
+   <div class="basket" draggable="true" id="item3">Item 3</div> -->
+
+  <div class="message" id="message"></div>
+
+
+   <div class="image-container">
+    <div class="top">
+      <img src="upMachine.png" alt="top img">
     </div>
+
     <div class="dropbox">
-      <img src="Untitled-2.png" alt="">
+      <img src="spin.png" id="spin">
+      <img src="bottomMachine.png" alt="down img">
     </div>
+
+   </div>
+
   </body>

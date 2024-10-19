@@ -1,30 +1,35 @@
 // let draggedElement = null;
 
-const colorBox = document.querySelector(".colorbox");
+const draggable = document.querySelector(".draggable");
 const dropBox = document.querySelector(".dropbox");
+const message = document.querySelector(".message");
 
-colorBox.addEventListener("dragstart", startDrag);
+let itemCounter = 0; // To track number of dropped items
+
+basket.addEventListener("dragstart", startDrag);
 
 function startDrag() {
-  draggedElement = colorBox;
+  draggedElement = draggable;
 }
 
-dropBox.addEventListener("dragover", endDrag);
+dropBox.addEventListener("dragover", dragOver);
 
-function endDrag(event) {
-  event.preventDefault();
+function dragOver(event) {
+dropbox.classList.add('drag-over');
+ event.preventDefault(); //Allow drop
 }
 
-dropBox.addEventListener("drop", handleDrop);
+dropBox.addEventListener("drop", dropItem);
 
-function handleDrop() {
-  if (draggedElement) {
-    const color = window
-      .getComputedStyle(draggedElement)
-      .getPropertyValue("background-color");
-    // const color = draggedElement.style.backgroundColor;
-    dropBox.style.backgroundColor = color;
-    dropBox.textContent = "Dropped!";
-    // draggedElement = null;
+itemCounter++;
+
+function dropItem() {
+  // if (draggedElement) {
+  //   const color = window
+  //     .getComputedStyle(draggedElement)
+  //     // .getPropertyValue("background-color");
+  //   // const color = draggedElement.style.backgroundColor;
+  //   dropBox.style.backgroundColor = color;
+  //   dropBox.textContent = "+ Laundry";
+  //   // draggedElement = null;
   }
-}
