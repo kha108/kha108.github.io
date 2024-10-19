@@ -1,4 +1,4 @@
-let draggedElement = null;
+// let draggedElement = null;
 
 const colorBox = document.querySelector(".colorbox");
 const dropBox = document.querySelector(".dropbox");
