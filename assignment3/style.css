@@ -1,3 +1,4 @@
+/* General Styling */
 * {
   margin: 0;
   padding: 0;
@@ -22,19 +23,30 @@ body {
     gap: 1.5rem;
   }
 
-  .dragbox {
-    position: relative;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+  .step {
+    margin: 20px 0;
+}
 
-  #item3 {
-    justify-content: end;
-    top: 330px;
-    left: 130px;
-    width: 100px;
-  }
-  
+  /* .disabled {
+    opacity: 0.5;
+    pointer-events: none;
+} */
+
+/* ----------------------------------------- */
+/* Draggable token */
+.dragToken {
+  width: 80px;
+  height: 80px;
+  /* background-color: coral; */
+  margin: 10px;
+  cursor: grab;
+  text-align: center;
+  line-height: 80px;
+  font-size: 18px;
+}
+
+/* ----------------------------------------- */
+/* Draggable laundry items and basket */
   #basket {
     width: 150px;
     top: 50px;
@@ -54,17 +66,28 @@ body {
     align-items: center;
   } 
 
-  .draggable:hover {
-    z-index: 10; /* Brings the hovered item to the front */
+  /* #item3 {
+    justify-content: end;
+    top: 330px;
+    left: 130px;
+    width: 100px;
   }
+   */
 
-  .image-container{
-    display: flex;
-    flex-direction: column;
-      /* align-items: center; Optional: Center horizontally */
-      /* width: 100%; */
-  }
-  
+  /* .draggable:hover {
+    z-index: 10; 
+  } */
+/* Brings the hovered item to the front */
+
+/* ------------------------------------------ */
+
+/* Display washing machine  */
+.image-container{
+  display: flex;
+  flex-direction: column;
+  align-items: right; 
+    /* width: 100%; */
+}
   .top {
     width: 100%; /* Adjust width */
     max-width: 250px;
@@ -73,8 +96,9 @@ body {
     /* display: flex; */
 
   }
-  
+/* ------------------------------------------- */
 
+/* Washing Machine */
   .dropbox {
     box-sizing: border-box;
     /* flex-direction: column; */
@@ -84,10 +108,13 @@ body {
     cursor: pointer;
     /* padding: 10px; */
     display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
     /* justify-content: center; */
-    align-items: center;
+    /* align-items: center; */
   }
-
+/* -------------------------------------------- */
   #spin {
     position: absolute;
     width: 72px;
@@ -100,7 +127,8 @@ body {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
 }
-
+/* ---------------------------------------------------- */
+/* Step-by-step guide to do laundry */
   .text-box {
     position: absolute;   /* Position the box absolutely */
     top: 200px;            /* Distance from the top of the page */
@@ -114,4 +142,12 @@ body {
     text-align: center;
     /* font-size: x-large; */
   }
-  
+/* ------------------------------------------------------- */
+/* Success message */
+
+/* Success box after dragging all items */
+#successMessage {
+  display: none;
+  color: green;
+  font-size: 18px;
+}

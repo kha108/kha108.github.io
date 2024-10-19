@@ -13,7 +13,8 @@
     <script src="script.js" defer></script>
   </head>
   <body>
-
+    
+   <!-- Steps guide -->
    <div class="text-box">
     Let's do laundry! <br>
     Step 1: Insert coin <br>
@@ -22,29 +23,41 @@
     Step 4: Press button to start! 
    </div>
 
-   <div class="dragbox" id="container">
-    <div class="draggable" id="basket"><img src="basket.png" alt="basket"></div>
-    <div class="draggable" draggable="true" id="item1"><img src="socks.png" alt="item1"></div>
-    <div class="draggable" draggable="true" id="item2"><img src="shirt.png" alt="item2"></div>
-    <div class="draggable" draggable="true" id="item3"><img src="detergent1.png" alt="item3"></div>
-    <div class="draggable" draggable="true" id="item4">Item 4</div>
-    
+   <!-- Step 1: Drag token into washing machine -->
+    <div class="step" id="step1">
+      <div id="dragTokenContainer">
+        <div id="token" class="dragToken" draggable="true" ondragstart="drag(event)">
+          <img src="token.png" alt="">
+        </div>
+        <div id="dropBoxStep1" class="dropBox" ondrop="dropToken(event)" ondragover="allowDrop(event)"></div>
+        <!-- step 1 message -->
+        <!-- <div id="step1Message">Drop the token</div> -->
+       </div>
+    </div>
+
+<!-- Step 2: Drag laundry into washing machine, add detergent -->
+  <div class="step disabled" id="step2">
+    <div id="dragContainerStep2">
+      <div class="dragbox" id="container">
+        <div class="draggable" id="basket"><img src="basket.png" alt="basket"></div>
+        <div class="draggable" draggable="true" id="item1"><img src="socks.png" alt="item1"></div>
+        <div class="draggable" draggable="true" id="item2"><img src="shirt.png" alt="item2"></div>
+        <div class="draggable" draggable="true" id="item3"><img src="detergent1.png" alt="item3"></div>
+        <div class="draggable" draggable="true" id="item4">Item 4</div>
+    </div>
+
+      <div id="dropBoxStep2" class="dropBox" ondrop="dropItems(event)" ondragover="allowDrop(event)"></div>
+      <!-- success message -->
+    <div id="successMessageStep2">All set! Proceed to Step 3.</div>
    </div>
-<!-- 
-    <div class="draggable" draggable="true">
-    <img src="IMG_3447-removebg-preview.png" alt="">
-    <div id="item1">item 1</div>
-    <div id="item2">item 2</div>
-    <div id="item3">item 3</div>
-    </div> -->
 
-   <!-- <div class="basket" draggable="true" id="item1">Item 1</div>
-   <div class="basket" draggable="true" id="item2">Item 2</div>
-   <div class="basket" draggable="true" id="item3">Item 3</div> -->
+<!-- Step 3: Press washing machine to start -->
+   <div class="step disabled" id="step3">
+    <img id="image3" src="" alt="Image 2" onclick="completeStep3()">
 
-  <div class="message" id="message"></div>
+   </div>
 
-
+<!-- Washing Machines images -->
    <div class="image-container">
     <div class="top">
       <img src="upMachine.png" alt="top img">
@@ -54,7 +67,6 @@
       <img src="spin.png" id="spin">
       <img src="bottomMachine.png" alt="down img">
     </div>
-
    </div>
 
   </body>
