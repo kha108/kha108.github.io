@@ -99,7 +99,7 @@ body {
 /* ------------------------------------------ */
 
 /* Display washing machine  */
-.image-container{
+.machine2{
   display: flex;
   flex-direction: column;
   align-items: right; 
@@ -116,7 +116,7 @@ body {
 /* ------------------------------------------- */
 
 /* Washing Machine */
-  .dropbox {
+  .machine {
     box-sizing: border-box;
     /* flex-direction: column; */
     width: 100%;

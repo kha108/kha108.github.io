@@ -23,48 +23,43 @@
     Step 3: Add detergent <br>
     Step 4: Press button to start! 
    </div>
-
-   <!-- Step 1: Drag token into washing machine -->
+<!-- 
+   Step 1: Drag token into washing machine
     <div class="step" id="step1">
-      <div id="dragTokenContainer">
         <div id="token" class="dragToken" draggable="true" ondragstart="drag(event)">
           <img src="token.png" alt="">
         </div>
-        <div id="dropBoxStep1" class="dropBox" ondrop="dropToken(event)" ondragover="allowDrop(event)"></div>
-        <!-- step 1 message -->
-        <!-- <div id="step1Message">Drop the token</div> -->
-       </div>
-    </div>
+        <div id="dropBox" ondrop="dropToken(event)" ondragover="allowDrop(event)"></div>
+        step 1 message
+        <div id="successMessageStep1">Token dropped!</div>
+    </div> -->
 
-<!-- Step 2: Drag laundry into washing machine, add detergent -->
+<!-- Draggable items -->
   <div class="step disabled" id="step2">
-    <div id="dragContainerStep2">
-      <div class="dragbox" id="container">
-        <div class="draggable" draggable="true" id="item1"><img src="socks.png" alt="item1"></div>
-        <div class="draggable" draggable="true" id="item2"><img src="shirt.png" alt="item2"></div>
-        <div class="draggable" draggable="true" id="item3"><img src="detergent1.png" alt="item3"></div>
-        <div class="draggable" draggable="true" id="item4">Item 4</div>
+    <!-- <div id="dragContainerStep2"> -->
+      <div class="dropBox" id="laundryBasket" >
+        
+        <div class="draggable" draggable="true" id="item1" ondragstart="drag(event)"><img src="socks.png" alt="item1"></div>
+        <div class="draggable" draggable="true" id="item2" ondragstart="drag(event)"><img src="shirt.png" alt="item2"></div>
+        <div class="draggable" draggable="true" id="item3" ondragstart="drag(event)"><img src="detergent1.png" alt="item3"></div>
+        <div class="draggable" draggable="true" id="item4" ondragstart="drag(event)"><img src="token.png" alt=""></div>
         <div class="draggable" id="basket"><img src="basket2.png" alt="basket"></div>
     </div>
-
-      <div id="dropBoxStep2" class="dropBox" ondrop="dropItems(event)" ondragover="allowDrop(event)"></div>
-      <!-- success message -->
-    <div id="successMessageStep2">All set! Proceed to Step 3.</div>
-   </div>
 
 <!-- Step 3: Press washing machine to start -->
    <div class="step disabled" id="step3">
     <!-- <img id="image3" src="" alt="Image 2" onclick="completeStep3()"> -->
-
-   </div>
+    <!-- step 3 message -->
+   
+   <audio id="successAudio" src="success-audio.mp3"></audio>
 
 <!-- Washing Machines images -->
-   <div class="image-container">
+   <div class="machine2">
     <div class="top">
       <img src="upMachine.png" alt="top img">
     </div>
 
-    <div class="dropbox">
+    <div class="machine">
       <!-- <img src="spin.png" id="spin"> -->
       <img src="bottomMachine.png" alt="down img">
     </div>
