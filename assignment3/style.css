@@ -6,6 +6,10 @@
 }
 
 body {
+    background-image: url(IMG_3469.png);
+    background-size: 1056px;
+    background-position: left;
+    background-repeat: no-repeat;
     background-color: white;
     display: flex;
     text-align: center;
@@ -40,7 +44,7 @@ body {
   /* background-color: coral; */
   margin: 10px;
   cursor: grab;
-  text-align: center;
+  text-align: left;
   line-height: 80px;
   font-size: 18px;
 }
@@ -48,36 +52,49 @@ body {
 /* ----------------------------------------- */
 /* Draggable laundry items and basket */
   #basket {
-    width: 150px;
-    top: 50px;
+    position: absolute;
+    width: 250px;
+    top: 550px;
+    left: 200px;
+    
   }
 
   .draggable {
     position: absolute;
     z-index: 1;
-    /* top: 0;
-    left: 0; */
-    width: 100px;
-    height: 150px;
-    /* width: 100px; */
-    /* min-height: 100px; */
+    top: 600px;
+    left: 300px;
+    width: 130px;
     cursor: grab;
     justify-content: center;
     align-items: center;
   } 
 
-  /* #item3 {
-    justify-content: end;
-    top: 330px;
-    left: 130px;
+  /* socks */
+  #item1 {
+    top: 540px;
+    left: 320px ;
     width: 100px;
   }
-   */
 
-  /* .draggable:hover {
+  /* shirt */
+  #item2 {
+    top: 550px;
+    left: 230px;
+
+  }
+
+  /* detergent */
+  #item3 {
+    top: 610px;
+    left: 530px;
+    width: 110px;
+  }
+  
+  /* Brings the hovered item to the front */
+  .draggable:hover {
     z-index: 10; 
-  } */
-/* Brings the hovered item to the front */
+  }
 
 /* ------------------------------------------ */
 
@@ -115,12 +132,14 @@ body {
     /* align-items: center; */
   }
 /* -------------------------------------------- */
-  #spin {
+/* Washing machine spin animation*/
+
+  /* #spin {
     position: absolute;
     width: 72px;
     right: 600px;
     top: 478px;
-  }
+  } */
 
   /* Washing Machine spinning animation */
   @keyframes spin {

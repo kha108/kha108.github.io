@@ -13,8 +13,9 @@
     <script src="script.js" defer></script>
   </head>
   <body>
+
     
-   <!-- Steps guide -->
+   <!-- Step-by-step guide -->
    <div class="text-box">
     Let's do laundry! <br>
     Step 1: Insert coin <br>
@@ -39,11 +40,11 @@
   <div class="step disabled" id="step2">
     <div id="dragContainerStep2">
       <div class="dragbox" id="container">
-        <div class="draggable" id="basket"><img src="basket.png" alt="basket"></div>
         <div class="draggable" draggable="true" id="item1"><img src="socks.png" alt="item1"></div>
         <div class="draggable" draggable="true" id="item2"><img src="shirt.png" alt="item2"></div>
         <div class="draggable" draggable="true" id="item3"><img src="detergent1.png" alt="item3"></div>
         <div class="draggable" draggable="true" id="item4">Item 4</div>
+        <div class="draggable" id="basket"><img src="basket2.png" alt="basket"></div>
     </div>
 
       <div id="dropBoxStep2" class="dropBox" ondrop="dropItems(event)" ondragover="allowDrop(event)"></div>
@@ -53,7 +54,7 @@
 
 <!-- Step 3: Press washing machine to start -->
    <div class="step disabled" id="step3">
-    <img id="image3" src="" alt="Image 2" onclick="completeStep3()">
+    <!-- <img id="image3" src="" alt="Image 2" onclick="completeStep3()"> -->
 
    </div>
 
@@ -64,7 +65,7 @@
     </div>
 
     <div class="dropbox">
-      <img src="spin.png" id="spin">
+      <!-- <img src="spin.png" id="spin"> -->
       <img src="bottomMachine.png" alt="down img">
     </div>
    </div>
