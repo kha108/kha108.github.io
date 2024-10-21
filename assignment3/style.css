@@ -4,7 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/* For font choices, I chose a retro pixel font to match the theme of my website, which
+consist of pixel art. Not only this font gives off a retro video game aesthetic, it is 
+also easy to read. */
 body {
     background-image: url(IMG_3469.png);
     background-size: 1056px;
@@ -35,19 +37,51 @@ body {
     opacity: 0.5;
     pointer-events: none;
 } */
-
 /* ----------------------------------------- */
-/* Draggable token */
-.dragToken {
-  width: 80px;
-  height: 80px;
-  /* background-color: coral; */
-  margin: 10px;
-  cursor: grab;
-  text-align: left;
-  line-height: 80px;
-  font-size: 18px;
+/* Button styling */
+/* For button icons, to fit the pixel aesthetics of my website, I chose icons with pixel design.
+Instead of a play and pause button, I chose a mute and unmute button so players can choose to play 
+the bgm or not */
+
+.audio-container {
+ position: relative;  
 }
+
+button { 
+  position: absolute;
+  bottom: 280px;   
+  right: 500px;
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  cursor: pointer;
+  background-size: contain;
+}
+
+button.play {
+  background-image: url('icons8-mute-64.png'); /* Use your play icon */
+}
+
+button.pause {
+  background-image: url('icons8-low-volume-64.png'); /* Use your pause icon */
+}
+
+/* ---------------------------------------------------- */
+/* Step-by-step guide to do laundry */
+.text-box {
+  position: absolute;   /* Position the box absolutely */
+  top: 200px;            /* Distance from the top of the page */
+  right: 70px;           /* Distance from the left of the page */
+  width: 350px;         /* Width of the text box */
+  align-items: center;
+  padding: 50px;        /* Padding inside the box */
+  border: 5px dashed #333; /* Border around the text box */
+  background-color: turquoise; /* Background color of the box */
+  color: firebrick;
+  text-align: center;
+  /* font-size: x-large; */
+}
+
 
 /* ----------------------------------------- */
 /* Draggable laundry items and basket */
@@ -89,6 +123,12 @@ body {
     top: 610px;
     left: 530px;
     width: 110px;
+  }
+
+  #item4 {
+    top: 200px;
+    left: 100px;
+    width: 50px;
   }
   
   /* Brings the hovered item to the front */
@@ -146,21 +186,7 @@ body {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
 }
-/* ---------------------------------------------------- */
-/* Step-by-step guide to do laundry */
-  .text-box {
-    position: absolute;   /* Position the box absolutely */
-    top: 200px;            /* Distance from the top of the page */
-    right: 70px;           /* Distance from the left of the page */
-    width: 350px;         /* Width of the text box */
-    align-items: center;
-    padding: 50px;        /* Padding inside the box */
-    border: 5px dashed #333; /* Border around the text box */
-    background-color: turquoise; /* Background color of the box */
-    color: firebrick;
-    text-align: center;
-    /* font-size: x-large; */
-  }
+
 /* ------------------------------------------------------- */
 /* Success message */
 
