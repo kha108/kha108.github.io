@@ -8,8 +8,8 @@
 consist of pixel art. Not only this font gives off a retro video game aesthetic, it is 
 also easy to read. */
 body {
-    background-image: url(IMG_3469.png);
-    background-size: 1056px;
+    background-image: url(Canvas4\ \(5\).png);
+    background-size: 1024px;
     background-position: left;
     background-repeat: no-repeat;
     background-color: white;
@@ -33,10 +33,6 @@ body {
     margin: 20px 0;
 }
 
-  /* .disabled {
-    opacity: 0.5;
-    pointer-events: none;
-} */
 /* ----------------------------------------- */
 /* Button styling */
 /* For button icons, to fit the pixel aesthetics of my website, I chose icons with pixel design.
@@ -120,7 +116,7 @@ button.pause {
 
   /* detergent */
   #item3 {
-    top: 610px;
+    top: 590px;
     left: 530px;
     width: 110px;
   }
