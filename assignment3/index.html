@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
+    <script src="script2.js" defer></script>
   </head>
   <body>
 
@@ -22,8 +22,15 @@
     <source src="Blithe-part-A.mp3" type="audio/mpeg">
     <source src="Blithe part A.ogg" type="audio/ogg">
     Your browser does not support the audio element.
+  </audio>
+  <audio id="laundry" loop>
+    <source src="laundry.mp3" type="audio/mpeg">
+    
+    Your browser does not support the audio element.
 </audio>
 </div>
+  
+
     
    <!-- Step-by-step guide -->
    <div class="text-box">
@@ -37,17 +44,23 @@
    <div id="instructions">
 </div>
 
+<!-- Display coin purse -->
+<div class="purse">
+    <img src="coinpurse.png" alt="purse">
+  </div>
+
 <!-- Draggable items -->
       <div id="draggableItems" >
+        <div class="draggable" draggable="true" id="item4"><img src="token.png" alt=""></div>
         <div class="draggable" draggable="true" id="item1"><img src="socks.png" alt="item1"></div>
         <div class="draggable" draggable="true" id="item2"><img src="shirt.png" alt="item2"></div>
         <div class="draggable" draggable="true" id="item3"><img src="detergent1.png" alt="item3"></div>
-        <div class="draggable" draggable="true" id="item4"><img src="token.png" alt=""></div>
+        
     </div>
 
     <div id="basket"><img src="basket2.png" alt="basket"></div>
 
-<!-- Washing Machines images -->
+<!-- Display washing machine -->
    <div class="machine2">
     <div class="top">
       <img src="upMachine.png" alt="top img">

@@ -99,7 +99,7 @@ button.pause {
     top: 600px;
     left: 300px;
     width: 130px;
-    cursor: grab;
+    /* cursor: grab; */
     justify-content: center;
     align-items: center;
   } 
@@ -124,10 +124,10 @@ button.pause {
     left: 530px;
     width: 110px;
   }
-
+/* token */
   #item4 {
-    top: 200px;
-    left: 100px;
+    top: 250px;
+    left: 120px;
     width: 50px;
   }
   
@@ -137,6 +137,13 @@ button.pause {
   }
 
 /* ------------------------------------------ */
+/* Coin purse styling */
+.purse {
+  width: 110px;
+  position: absolute;
+  left: 100px;
+}
+
 
 /* Display washing machine  */
 .machine2{
