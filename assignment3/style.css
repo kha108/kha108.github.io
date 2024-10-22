@@ -144,6 +144,12 @@ button.pause {
   left: 100px;
 }
 
+.towels {
+  width: 150px;
+  left: 180px;
+  top: 50px;
+  position: absolute;
+}
 
 /* Display washing machine  */
 .machine2{
