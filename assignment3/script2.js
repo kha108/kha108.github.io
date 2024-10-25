@@ -65,3 +65,26 @@ dropBox.addEventListener("click", playLaundry);
 function playLaundry () {
     laundry.play();
 }
+
+// -----------------------------------------------------
+// Pop-up button controls 
+const openPopupButton = document.getElementById('openPopupButton');
+const popupOverlay = document.getElementById('popupOverlay');
+const closePopupButton = document.getElementById('closePopupButton');
+
+// Show the pop-up when the button is clicked
+openPopupButton.addEventListener('click', () => {
+    popupOverlay.style.display = 'flex';  // Display the overlay and pop-up
+});
+
+// Close the pop-up when the close button is clicked
+closePopupButton.addEventListener('click', () => {
+    popupOverlay.style.display = 'none';  // Hide the overlay and pop-up
+});
+
+// Optional: Close the pop-up if the user clicks outside the pop-up box
+popupOverlay.addEventListener('click', (event) => {
+    if (event.target === popupOverlay) {  // Check if the overlay itself was clicked
+        popupOverlay.style.display = 'none';
+    }
+});

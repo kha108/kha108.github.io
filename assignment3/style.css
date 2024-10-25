@@ -63,6 +63,49 @@ button.pause {
 }
 
 /* ---------------------------------------------------- */
+/* Basic styles for the button and the pop-up */
+#openPopupButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* The overlay that dims the background */
+#popupOverlay {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* The pop-up content box */
+#popupBox {
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+/* Close button */
+#closePopupButton {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+/* ---------------------------------------------------- */
 /* Step-by-step guide to do laundry */
 .text-box {
   position: absolute;   /* Position the box absolutely */
@@ -191,17 +234,17 @@ button.pause {
   } */
 
   /* Washing Machine spinning animation */
-  @keyframes spin {
+  /* @keyframes spin {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
-}
+} */
 
 /* ------------------------------------------------------- */
 /* Success message */
 
 /* Success box after dragging all items */
-#successMessage {
+/* #successMessage {
   display: none;
   color: green;
   font-size: 18px;
-}
+} */
