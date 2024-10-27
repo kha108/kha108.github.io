@@ -65,17 +65,17 @@ button.pause {
 /* ---------------------------------------------------- */
 /* Basic styles for the button and the pop-up */
 #openPopupButton {
-  
+  /* position: inherit; */
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
 }
-/* Close button */
+/*Close button */
 #closePopupButton {
-  bottom: 280px;   
+  bottom: 250px;   
   right: 500px;
   width: 60px;
-  background-color: #f44336;
+  /* background-color: #f44336; */
   color: white;
   border: none;
   padding: 5px 10px;
@@ -131,7 +131,7 @@ button.pause {
   #basket {
     position: absolute;
     width: 250px;
-    top: 550px;
+    top: 520px;
     left: 200px;
     
   }
