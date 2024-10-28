@@ -5,6 +5,11 @@ const laundry = document.querySelector("#laundry");
 const blip = document.querySelector("#blip");
 let draggedElement = null;
 
+// A breakdown of the gameplay is, the player have to follow the set of rules listed
+// in the steps guide. If player does not follow the steps accordingly, it will not 
+// allow the player to proceed to the next step. Only when player followed the right 
+// step, a blip sfx will play to indicate they moved on to the next step, and if they 
+// completed a game, a victory audio will play.
 let currentStep = 0;
 
 for(let i=0;i<dragItems.length;i++)
@@ -69,24 +74,3 @@ function playLaundry () {
 }
 
 // -----------------------------------------------------
-// Pop-up button controls 
-const openPopupButton = document.getElementById('openPopupButton');
-const popupOverlay = document.getElementById('popupOverlay');
-const closePopupButton = document.getElementById('closePopupButton');
-
-// Show the pop-up when the button is clicked
-openPopupButton.addEventListener('click', () => {
-    popupOverlay.style.display = 'flex';  // Display the overlay and pop-up
-});
-
-// Close the pop-up when the close button is clicked
-closePopupButton.addEventListener('click', () => {
-    popupOverlay.style.display = 'none';  // Hide the overlay and pop-up
-});
-
-// Optional: Close the pop-up if the user clicks outside the pop-up box
-popupOverlay.addEventListener('click', (event) => {
-    if (event.target === popupOverlay) {  // Check if the overlay itself was clicked
-        popupOverlay.style.display = 'none';
-    }
-});

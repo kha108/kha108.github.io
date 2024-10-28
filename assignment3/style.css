@@ -7,6 +7,10 @@
 /* For font choices, I chose a retro pixel font to match the theme of my website, which
 consist of pixel art. Not only this font gives off a retro video game aesthetic, it is 
 also easy to read. */
+
+/* As for colour palette, since the atmosphere of this minigame is cozy, and relaxing,
+I chose a colour palette that consist of bright or pastel colours. Since it is a 
+retro-inspired game, I replicate a black and white floor tiling.*/
 body {
     background-image: url(Canvas4\ \(5\).png);
     background-size: 1024px;
@@ -54,63 +58,22 @@ button {
   background-size: contain;
 }
 
+/* I put the bgm Mute on default so the bgm will not autoplay and get 
+startled when they open the website on their browser */
 button.play {
-  background-image: url('icons8-mute-64.png'); /* Use your play icon */
+  background-image: url('icons8-mute-64.png'); 
 }
 
+/* Unmute button if players want to play the bgm */
 button.pause {
-  background-image: url('icons8-low-volume-64.png'); /* Use your pause icon */
-}
-
-/* -------------------------------------------------------------------------- */
-/* Basic styles for the button and the pop-up */
-#openPopupButton {
-  /* position: inherit; */
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-}
-/*Close button */
-#closePopupButton {
-  bottom: 250px;   
-  right: 500px;
-  width: 60px;
-  /* background-color: #f44336; */
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  cursor: pointer;
-  border-radius: 4px;
-  margin-top: 10px;
-}
-
-/* The overlay that dims the background */
-#popupOverlay {
-  display: none; /* Hidden by default */
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  /* background-color: rgba(0, 0, 0, 0.5); Semi-transparent black */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* The pop-up content box */
-#popupBox {
-  width: 500px;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  text-align: center;
+  background-image: url('icons8-low-volume-64.png'); 
 }
 
 
 /* ---------------------------------------------------------------------*/
 /* Step-by-step guide to do laundry */
+/* I decided to place the steps guide at the side of the website to create a
+seperation from the game space (laundromat room) */
 .text-box {
   position: absolute; 
   top: 150px;            /* Distance from the top of the page */
@@ -126,18 +89,21 @@ button.pause {
 }
 
 /* Reference */
+/* I try to make credit list as small as possible so it
+is not too obvious on the website */
 .reference{
   position: fixed;
   width: 500px;
   align-items: center;
-  top: 650px;
+  top: 680px;
   right: 10px;
   color: #3f5161;
-  font-size: medium;
+  font-size: small;
 }
 
 /* ---------------------------------------------------------------------- */
 /* Draggable laundry items and basket */
+
 /* Laundry basket */
   #basket {
     position: absolute;
@@ -178,6 +144,7 @@ button.pause {
     left: 500px;
     width: 110px;
   }
+
 /* token */
   #item4 {
     top: 300px;
@@ -204,6 +171,13 @@ button.pause {
   left: 180px;
   top: 50px;
   position: absolute;
+}
+
+.clock {
+  position: fixed;
+  width: 200px;
+  left: 420px;
+  top: 50px ;
 }
 
 /* Display washing machine  */

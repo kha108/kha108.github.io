@@ -18,41 +18,37 @@
   <div class="audio-container">
   <button id="playPauseBtn" class="play" onclick="toggleAudio()"></button>
 
+   <!--Background music for the game -->
+   <!-- For the bgm, I chose a retro 8-bit music which is lighthearted, fun
+    and bright that matches the vibe of this laundry minigame -->
   <audio id="bgm" loop>
-    <!--Background music for the game  -->
     <source src="Blithe-part-A.mp3" type="audio/mpeg">
     <source src="Blithe part A.ogg" type="audio/ogg">
     Your browser does not support the audio element.
   </audio>
-  <!-- When players complete the steps, a victory audio will play -->
+
+  <!-- When players complete the steps, a short victory audio will play to 
+   let them know they completed the minigame. -->
   <audio id="laundry">
     <source src="level-up-enhancement-8-bit-retro-sound-effect-153002.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
 </audio>
-<!-- Blip sound effect when players drop an item into the washing machine -->
+
+<!--Retro 8-bit Blip sound effect when players drop an item into the 
+washing machine -->
 <audio id="blip">
   <source src="blip-131856.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
 </div>
 
-<!-- Reference pop-up button-->
-  <!-- <button id="openPopupButton">
-    <img src="referenceicon.png" alt="">
-  </button> -->
-
-  <!-- The pop-up overlay and box -->
-  <!-- <div id="popupOverlay">
-      <div id="popupBox">
-          <p></p>
-          <button id="closePopupButton">
-            <img src="" alt="">
-          </button>
-      </div>
-  </div> -->
   
     
    <!-- Step-by-step guide -->
+    <!-- To make this laundry game educational, for instance kids to play,
+     I decided to put a basic step-by-step guide list on how to do laundry in a laundromat. 
+     The setting of the game is actually inspired and based on most laundromats or 
+     laundry rooms in student accomodation.-->
    <div class="text-box">
     LET'S DO LAUNDRY! <br><br>
     Step 1: Insert token <br><br>
@@ -60,6 +56,8 @@
     Step 3: Add detergent <br><br>
     Step 4: Well Done!  
    </div>
+
+
 <div class="reference">
   Credits: <br>
   <a href="https://janhehr.itch.io/city-date">Bgm</a> audio by
@@ -74,18 +72,30 @@
   <a href="https://icons8.com">Icons8</a>
 
 </div>
-
 </div>
+<!-- Decorative items -->
+<!-- I created all pixel art shown in the website using a
+ pixel art software called Dotpict.  -->
 
+ <!-- Coin purse -->
+<!-- I figured if I just place a token floating in the air,
+ it will look odd. Hence, I decided to add a coin purse to show
+ that the token is taken out from it.  -->
 <!-- Display coin purse -->
 <div class="purse">
     <img src="coinpurse.png" alt="purse">
   </div>
 
-  <!-- Display shelf -->
+  <!-- Towel shelf -->
   <div class="towels">
     <img src="towels.png" alt="towels">
   </div>
+
+  <!-- Wall clock -->
+  <div class="clock">
+    <img src="clock.png" alt="clock">
+  </div>
+
 <!-- Draggable items -->
       <div id="draggableItems" >
         <div class="draggable" draggable="true" id="item4"><img src="token.png" alt=""></div>
@@ -98,6 +108,9 @@
     <div id="basket"><img src="basket2.png" alt="basket"></div>
 
 <!-- Display washing machine -->
+ <!-- To show that the upper washing machine is not the dropbox washing machine,
+  I created the image of an opened washine machine with clothes hanging out,
+  indicating it is not for use or someone is occupying it. -->
    <div class="machine2">
     <div class="top">
       <img src="upMachine.png" alt="top img">
@@ -105,7 +118,6 @@
     
 <!-- Drop box washing machine -->
     <div class="machine" id="dropBox">
-      <!-- <img src="spin.png" id="spin"> -->
       <img src="bottomMachine.png" alt="down img">
     </div>
    </div>
