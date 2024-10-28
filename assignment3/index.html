@@ -7,51 +7,73 @@
     <title>Laundry Game</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jersey+20&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <script src="script2.js" defer></script>
   </head>
   <body>
 
-  <!-- Background music -->
+  <!-- Audios -->
   <div class="audio-container">
   <button id="playPauseBtn" class="play" onclick="toggleAudio()"></button>
 
   <audio id="bgm" loop>
+    <!--Background music for the game  -->
     <source src="Blithe-part-A.mp3" type="audio/mpeg">
     <source src="Blithe part A.ogg" type="audio/ogg">
     Your browser does not support the audio element.
   </audio>
-  <audio id="laundry" loop>
+  <!-- When players complete the steps, a victory audio will play -->
+  <audio id="laundry">
     <source src="level-up-enhancement-8-bit-retro-sound-effect-153002.mp3" type="audio/mpeg">
-    
     Your browser does not support the audio element.
+</audio>
+<!-- Blip sound effect when players drop an item into the washing machine -->
+<audio id="blip">
+  <source src="blip-131856.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
 </audio>
 </div>
 
 <!-- Reference pop-up button-->
-  <button id="openPopupButton">
-    <img src="" alt="">
-  </button>
+  <!-- <button id="openPopupButton">
+    <img src="referenceicon.png" alt="">
+  </button> -->
 
   <!-- The pop-up overlay and box -->
-  <div id="popupOverlay">
+  <!-- <div id="popupOverlay">
       <div id="popupBox">
-          <p>Reference</p>
-          <button id="closePopupButton">Close</button>
+          <p></p>
+          <button id="closePopupButton">
+            <img src="" alt="">
+          </button>
       </div>
-  </div>
+  </div> -->
   
     
    <!-- Step-by-step guide -->
    <div class="text-box">
-    Let's do laundry! <br>
-    Step 1: Insert coin <br>
-    Step 2: Put in your laundry <br>
-    Step 3: Add detergent <br>
-    Step 4: Press button to start! 
+    LET'S DO LAUNDRY! <br><br>
+    Step 1: Insert token <br><br>
+    Step 2: Put in your laundry <br><br>
+    Step 3: Add detergent <br><br>
+    Step 4: Well Done!  
    </div>
+<div class="reference">
+  Credits: <br>
+  <a href="https://janhehr.itch.io/city-date">Bgm</a> audio by
+  <a href="https://janhehr.com">Jan Hehr</a>,
+  <a href="https://pixabay.com/sound-effects/blip-131856/">Blip sfx</a> audio by
+  <a href="https://pixabay.com">Pixabay</a>,
+  <a href="https://pixabay.com/sound-effects/level-up-enhancement-8-bit-retro-sound-effect-153002/">Success sfx</a> audio by
+  <a href="https://pixabay.com">Pixabay</a>, <br>
+  <a href="https://img.icons8.com/color-pixels/32/mute.png">Mute icon</a> icon by
+  <a href="https://icons8.com">Icons8</a>,
+  <a href="https://img.icons8.com/color-pixels/32/low-volume.png">Unmute icon</a> icon by
+  <a href="https://icons8.com">Icons8</a>
+
+</div>
 
 </div>
 

@@ -2,6 +2,7 @@ const dragItems = document.querySelectorAll(".draggable");
 console.log(dragItems);
 const audio = document.querySelector("#bgm");
 const laundry = document.querySelector("#laundry");
+const blip = document.querySelector("#blip");
 let draggedElement = null;
 
 let currentStep = 0;
@@ -14,6 +15,7 @@ dragItems[i].addEventListener("dragstart", function () {
         // dragItems[i].style.display= "none";
         console.log(draggedElement);
         currentStep++;
+        blip.play();
     }
 }
 );
