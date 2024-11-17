@@ -68,9 +68,9 @@ function toggleAudio() {
     }
 }
  
-dropBox.addEventListener("click", playLaundry);
-function playLaundry () {
-    laundry.play();
-}
+// dropBox.addEventListener("click", playLaundry);
+// function playLaundry () {
+//     laundry.play();
+// }
 
 // -----------------------------------------------------
