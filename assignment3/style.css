@@ -119,7 +119,7 @@ is not too obvious on the website */
     top: 600px;
     left: 300px;
     width: 130px;
-    /* cursor: grab; */
+    cursor: grab;
     justify-content: center;
     align-items: center;
   } 
